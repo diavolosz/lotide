@@ -1,13 +1,13 @@
 
 
 
-// const assertEqual = function(actual, expected) {
-//   if (actual !== expected) {
-//     console.log(`🛑🛑🛑 Assertion Failed: ${actual} !== ${expected}`);
-//   } else {
-//     console.log(`✅✅✅ Assertion Passed: ${actual} === ${expected}`);
-//   }
-// };
+const assertEqual = function(actual, expected) {
+  if (actual !== expected) {
+    console.log(`🛑🛑🛑 Assertion Failed: ${actual} !== ${expected}`);
+  } else {
+    console.log(`✅✅✅ Assertion Passed: ${actual} === ${expected}`);
+  }
+};
 
 
 const eqArrays = function(actual, expected) {
@@ -25,9 +25,9 @@ const eqArrays = function(actual, expected) {
 };
 
 // checking for eqArray return value 
-// console.log(eqArrays(["1", "2", "3"], ["1", "2", "3"]));
-// console.log(eqArrays(["1", "2", "3"], ["1", "2", 3]));
+console.log(eqArrays(["1", "2", "3"], ["1", "2", "3"]));
+console.log(eqArrays(["1", "2", "3"], ["1", "2", 3]));
 
 
-// assertEqual(eqArrays([1, 2, 3], [1, 2, 3]), true); // => should PASS
-// assertEqual(eqArrays([1, 2, 3], [1, 2, "3"]), true); // => should PASS
+assertEqual(eqArrays([1, 2, 3], [1, 2, 3]), true); // => should PASS
+assertEqual(eqArrays([1, 2, 3], [1, 2, "3"]), true); // => should PASS
