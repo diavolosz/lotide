@@ -19,7 +19,7 @@ const assertArraysEqual = function(actual, expected) {
   } else {
     console.log(`✅✅✅ Assertion Passed: ${actual} === ${expected}`);
   }
-};
+}
 
 
 const flatten = function(input) {
