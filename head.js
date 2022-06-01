@@ -23,8 +23,3 @@ assertEqual(head(["Hello", "Lighthouse", "Labs"]), "Hello");
 
 
 
-// FUNCTION IMPLEMENTATION
-const head = function(array) {
-  return array[0]
-};
-
