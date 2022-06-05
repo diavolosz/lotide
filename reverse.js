@@ -12,3 +12,4 @@ for (let x = 0; x < args.length; x++) {
   console.log(reverse.join(""))
 }
 
+module.exports = reverse

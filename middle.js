@@ -23,6 +23,9 @@
 
 //------------------------------------------------------------------------
 
+let assertArraysEqual = require("./assertArraysEqual")
+let eqArrays = require("./eqArrays")
+
 // actual function
 let middle = function(array) {
 
@@ -34,6 +37,7 @@ let middle = function(array) {
     return array.splice((array.length/2 - 1), 2);
 }
 
+module.exports = middle
 
 // // test case
 // assertArraysEqual(eqArrays(middle([1, 2, 3, 4, 5, 6]), [3, 4])
