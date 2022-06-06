@@ -1,4 +1,4 @@
-let countLetter = function(stringInput) {
+let countLetters = function(stringInput) {
 
   let object = {};
   let spaceRemovedInput = stringInput.split(" ").join("");
@@ -14,5 +14,5 @@ let countLetter = function(stringInput) {
 };
 
 
-module.exports = countLetter
+module.exports = countLetters
 

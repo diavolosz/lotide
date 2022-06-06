@@ -20,6 +20,5 @@ describe ("tetsing the tail.js code", () => {
     expect(output).to.deep.equal(expectedOutput);
   });
 
-
 });
 

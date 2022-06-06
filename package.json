@@ -1,0 +1,27 @@
+{
+  "name": "@diavolosz/lotide",
+  "version": "1.0.0",
+  "description": "Project Lotide contains codes replicated from Lodash library. First project completed in Lighthouse Labs bootcamp.",
+  "main": "assertArraysEqual.js",
+  "directories": {
+    "test": "test"
+  },
+  "scripts": {
+    "test": "./node_modules/mocha/bin/mocha.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/diavolosz/lotide.git"
+  },
+  "keywords": [],
+  "author": "Michael LeDuong <michaeldiavolos@gmail.com>",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/diavolosz/lotide/issues"
+  },
+  "homepage": "https://github.com/diavolosz/lotide#readme",
+  "devDependencies": {
+    "chai": "^4.3.6",
+    "mocha": "^10.0.0"
+  }
+}
