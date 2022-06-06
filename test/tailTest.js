@@ -1,12 +1,25 @@
-let assertEqual = require("../assertEqual")
-let tail = require("../tail")
+const assert = require("chai").assert;
+const expect = require("chai").expect;
+const should = require("chai").should;
 
-// test case
-const result = tail(["Hello", "Lighthouse", "Labs"]);
-assertEqual(result, ["Lighthouse", "Labs"]); // => will always fail!
+const tail = require("../tail")
+
+describe ("tetsing the tail.js code", () => {
+
+  it("should return Lighthouse, Labs", () => {
+    let input = ["Yo Yo", "Lighthouse", "Labs"];
+    let output = tail(input);
+    let expectedOutput = ["Lighthouse", "Labs"];
+    expect(output).to.deep.equal(expectedOutput);
+  });
+
+  it("should return 2, 3, 4, 5, 6", () => {
+    let input = [1, 2, 3, 4, 5, 6];
+    let output = tail(input);
+    let expectedOutput = [2, 3, 4, 5, 6];
+    expect(output).to.deep.equal(expectedOutput);
+  });
 
 
-// array motification test
-const words = ["Yo Yo", "Lighthouse", "Labs"];
-tail(words); // no need to capture the return value since we are not checking it
-assertEqual(words.length, 3); // original array should still have 3 elements!
+});
+
