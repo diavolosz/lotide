@@ -1,12 +1,3 @@
-
-
-// checking for eqArray return value 
-// let testSet1 = eqArrays([[2, 3], [4]], [[2, 3], [4]]) // => true
-// let testSet2 = eqArrays([[2, 3], [4]], [[2, 3], [4, 5]]) // => false
-// let testSet3 = eqArrays([[2, 3], [4]], [[2, 3], 4]) // => false
-
-
-
 const assert = require("chai").assert;
 const expect = require("chai").expect;
 const should = require("chai").should;
