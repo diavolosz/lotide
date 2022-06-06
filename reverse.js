@@ -1,8 +1,3 @@
-
-
-
-
-
 const args = process.argv.slice(2)
 for (let x = 0; x < args.length; x++) {
   let reverse = []
